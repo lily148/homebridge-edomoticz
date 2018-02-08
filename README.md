@@ -4,7 +4,7 @@ for use with [Homebridge](https://github.com/nfarina/homebridge) v0.2.1+
 and [Domoticz](https://github.com/domoticz/domoticz)
 
 ## Supports:
-### Standard HomeKit Types:
+### Standard HomeKit Types (supported by Home.app):
 - Sockets (on/off) - Domoticz SwitchTypeVal: 0
 - Lamps (on/off) - Domoticz SwitchTypeVal: 0
 - Contact Sensors - Domoticz SwitchTypeVal: 2
@@ -17,9 +17,10 @@ and [Domoticz](https://github.com/domoticz/domoticz)
 - Lock Mechanisms - Domoticz SwitchTypeVal: 11
 - Blinds (%) - Domoticz SwitchTypeVal: 13
 - Blinds (& inverted) - Domoticz SwitchTypeVal: 16
+- Push Buttons (selectors) - Domoticz SwitchTypeVal: 18
 
 ## Provides:
-### Custom HomeKit Types:
+### Custom HomeKit Types (supported by 3rd Party HomeKit Apps only - eg: Elgato Eve):
 - General kWh power meters - Types: General, Current; SubType: kWh, mapped to Eve chars where possible
 - CurrentCost USB power meter - Type: Usage, SubType: Electric, mapped to Eve chars where possible
 - P1 Smart Meter (Electric & Gas), mapped to Eve chars where possible
@@ -34,7 +35,7 @@ and [Domoticz](https://github.com/domoticz/domoticz)
 ## Todo:
 - [x] homebridge [plugin 2.0](https://github.com/nfarina/homebridge/pull/497) support
 - [x] MQTT-based realtime updates
-- [x] Hue/RGB
+- [x] Hue/RGB (partial - see https://github.com/domoticz/domoticz/issues/1808)
 - [x] Blinds
 - [x] m3 (gas usage)
 - [x] Motion sensors
@@ -110,10 +111,10 @@ Values can be omitted from this dictionary, and the values that need overriding 
 to only override the port value.
 
 To prevent certain Domoticz devices from showing up in HomeBridge it is possible to exclude them by setting the "excludedDevices" parameter.
-Provide an array of Domoticz Device ID's, which can be found in the Domoticz dashboard on the "Setup > Devices" page and look for the "ID" column (not the "idx" column).
+Provide an array of Domoticz Device IDX's, which can be found in the Domoticz dashboard on the "Setup > Devices" page and look for the "idx" column.
 
 ```
-"excludedDevices": ["0000001","0000002"]
+"excludedDevices": ["12","30","129"]
 ```
 
 ## Tips
