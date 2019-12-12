@@ -1,5 +1,5 @@
 {
-	"pluginAlias": "smartgateway-bridge",
+	"pluginAlias": "edomoticz",
 	"pluginType": "platform",
 	"singular": false,
 	"headerDisplay": "Homekit plugin for Smart Gateway",
