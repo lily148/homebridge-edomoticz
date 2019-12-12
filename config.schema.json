@@ -1,7 +1,7 @@
 {
 	"pluginAlias": "eDomoticz",
 	"pluginType": "platform",
-	"singular": false,
+	"singular": true,
 	"headerDisplay": "Homekit plugin for Smart Gateway",
 	"footerDisplay": "For help visit https://ibeyondsmart.com",
 	"schema": {
