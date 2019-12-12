@@ -1,5 +1,5 @@
 {
-	"pluginAlias": "edomoticz",
+	"pluginAlias": "eDomoticz",
 	"pluginType": "platform",
 	"singular": false,
 	"headerDisplay": "Homekit plugin for Smart Gateway",
