@@ -40,6 +40,12 @@
 				"default": 1,
 				"description": "By default, the plugin will grab hardware information regarding MQTT from Smart Gateway if MQTT is checked."
 			},
+			"ssl": {
+				"title": "Enable SSL",
+				"type": "boolean",
+				"default": 0,
+				"description": "You will need to specify your SSL port - usually Port 443 by default."
+			},
 			"dimFix": {
 				"title": "Dim Offset",
 				"type": "integer",
