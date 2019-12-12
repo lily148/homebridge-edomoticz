@@ -1,5 +1,6 @@
 {
-  "name": "homebridge-edomoticz",
+  "displayName": "Homekit and Smart Gateway Bridge",
+  "name": "homebridge-smartgateway-bridge",
   "version": "2.1.13",
   "description": "homebridge-plugin for Domoticz https://github.com/nfarina/homebridge",
   "main": "index.js",
